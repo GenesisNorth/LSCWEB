@@ -49,10 +49,12 @@ const Member = () => {
               <div className="gap-[4px] text-left">
                 <h2 className="font-semibold text-[24px]">Becoming a Member</h2>
                 <p className="text-[16px] text-[#444444] leading-[26px]">
-                  We warmly invite you to become a member of our church community.
-                  By joining us, you&apos;ll not only find spiritual growth and
-                  support but also a vibrant community of caring individuals who share in faith and fellowship.
-                </p>
+                We warmly invite you to become a member of our church
+                <br /> community. By joining us, you&apos;ll not only find
+                spiritual
+                <br /> growth and support but also a vibrant community of
+                <br /> caring individuals who share in faith and fellowship.
+              </p>
               </div>
               <button
                 onClick={handleButtonClick}
