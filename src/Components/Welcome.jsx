@@ -27,7 +27,8 @@ const Welcome = () => {
           </p>
         </div>
 
-        <ButtonOne className="w-[175px] mt-5 flex items-center justify-center gap-1">
+        <ButtonOne onClick={() => window.open('https://www.youtube.com/@rccglscabuja')}
+        className="w-[175px] mt-5 flex items-center justify-center gap-1">
           <p>Watch Live</p>
           <FiVideo height={18} width={18} />
         </ButtonOne>

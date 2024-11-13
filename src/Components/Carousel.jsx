@@ -1,11 +1,24 @@
 import React from 'react';
+import image from "../assets/img.jpg";
+import { img } from 'framer-motion/client';
 
+// const items = [
+//   { id: 1, content: "Item 33", bgColor: "bg-red-200 rounded-[100px]" },
+//   { id: 2, content: "Item 2", bgColor: "bg-orange-200 rounded-[50px]" },
+//   { id: 3, content: "Item 3", bgColor: "bg-yellow-200 rounded-[100px]" },
+//   { id: 4, content: "Item 4", bgColor: "bg-green-200 rounded-[50px]" }
+// ];
+
+
+// my own test
 const items = [
-  { id: 1, content: "Item 1", bgColor: "bg-red-200 rounded-[100px]" },
-  { id: 2, content: "Item 2", bgColor: "bg-orange-200 rounded-[50px]" },
-  { id: 3, content: "Item 3", bgColor: "bg-yellow-200 rounded-[100px]" },
-  { id: 4, content: "Item 4", bgColor: "bg-green-200 rounded-[50px]" }
+  { id: 1, imageUrl: image, bgColor: "bg-red-200 rounded-[100px]" },
+  { id: 2, imageUrl: "https://example.com/image2.jpg", bgColor: "bg-orange-200 rounded-[50px]" },
+  { id: 3, imageUrl: "https://example.com/image3.jpg", bgColor: "bg-yellow-200 rounded-[100px]" },
+  { id: 4, imageUrl: "https://example.com/image4.jpg", bgColor: "bg-green-200 rounded-[50px]" }
 ];
+
+
 
 const Carousel = () => {
   const loopingItems = [...items, ...items, ...items];
