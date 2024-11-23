@@ -13,13 +13,13 @@ const WeeklyCard = ({
   third,
 }) => {
   return (
-    <div className="w-[588px] h-[560px] relative group parent-container rounded-[12px] overflow-hidden">
+    <div className="w-full max-w-[588px] min-h-[500px] sm:h-[560px] relative group parent-container rounded-[12px] overflow-hidden">
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={img}
         alt="bible"
       />
-      <div className="absolute bottom-0  left-0 w-full h-[185px] space-y-[12px] text-white px-[24px] py-[32px] backdrop-blur-md bg-[rgba(0, 0, 0, 0.3)]">
+      <div className="absolute bottom-0 left-0 w-full px-4 py-6 space-y-4 bg-[rgba(0, 0, 0, 0.3)] backdrop-blur-md text-white h-auto sm:h-[185px] overflow-y-auto">
         <div className="flex justify-between">
           <p className="font-semibold text-[20px]">{action}</p>
           <div className="flex justify-center gap-[5px] p-[8px] rounded-[12px] border-white border w-[148px] h-[37px]">
@@ -30,9 +30,14 @@ const WeeklyCard = ({
           </div>
         </div>
         <div className="font-medium text-[16px] text-left">
-          <p>{first}</p>
-          <p>{second}</p>
-          <p>{third}</p>
+          <p className="block sm:hidden">
+            {`${first} ${second} ${third}`}
+          </p>
+          <div className="hidden sm:block">
+            <p>{first}</p>
+            <p>{second}</p>
+            <p>{third}</p>
+          </div>
         </div>
       </div>
     </div>

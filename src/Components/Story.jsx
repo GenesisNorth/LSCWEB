@@ -1,23 +1,25 @@
-import React from 'react'
+import React from 'react';
 import image from "../assets/img.jpg";
 
 const Story = () => {
   return (
-    <div className="space-y-[32px]">
-      <p className="font-semibold text-[40px] text-center text-neutral-900">
+    <div className="space-y-[32px] px-4">
+      <p className="text-3xl md:text-[40px] font-semibold text-center">
         MY LSC STORY
       </p>
-      <div className="h-[370px] w-[1200px] flex justify-between">
-        <div className="w-[726px] h-[370px] rounded-[16px] bg-[#EEE7F6] flex justify-between p-[16px]">
-          <div className="w-[199px] h-[338px] rounded-[16px]">
+
+      <div className="flex flex-col sm:flex-row justify-between w-full min-h-[370px] space-y-6 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row w-full sm:w-[726px] min-h-[370px] rounded-[16px] bg-[#EEE7F6] p-[16px] space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="w-[150px] h-[150px] sm:w-[199px] sm:h-[338px] rounded-full sm:rounded-[16px] overflow-hidden order-2 sm:order-1 mt-6 sm:mt-0">
             <img
               src={image}
-              className="w-full h-full object-cover rounded-[16px]"
+              className="w-full h-full object-cover"
               alt="Nil"
             />
           </div>
-          <div className="flex w-[469px] flex-col justify-between">
-            <h2 className="text-[18px] text-[#333333] leading-[32px] text-left">
+
+          <div className="flex flex-col justify-between w-full sm:w-[469px] space-y-4 order-1 sm:order-2">
+            <h2 className="text-[16px] sm:text-[18px] text-[#333333] leading-[28px] sm:leading-[32px] text-left">
               “As I reflect on my years in this church, I am filled with
               gratitude for the community and faith that have shaped my life. I
               came here as a young seeker, lost and searching for purpose, and
@@ -25,29 +27,31 @@ const Story = () => {
               but a family.&rdquo;
             </h2>
             <div className="space-y-[5px]">
-              <h2 className="font-medium">Abidemi Sharon</h2>
-              <h2 className="text-[14px]">A choirister</h2>
+              <h2 className="font-medium text-base sm:text-lg">Abidemi Sharon</h2>
+              <h2 className="text-[12px] sm:text-[14px]">A choirister</h2>
             </div>
           </div>
         </div>
-        <div className="w-[150px] h-full rounded-[16px]">
+
+        {/* Extra Images Section (Hidden on Small Screens) */}
+        <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
             src={image}
-            className="w-full h-full object-cover rounded-[16px]"
+            className="w-full h-full object-cover"
             alt="Nil"
           />
         </div>
-        <div className="w-[150px] h-full rounded-[16px]">
+        <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
             src={image}
-            className="w-full h-full object-cover rounded-[16px]"
+            className="w-full h-full object-cover"
             alt="Nil"
           />
         </div>
-        <div className="w-[150px] h-full rounded-[16px]">
+        <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
             src={image}
-            className="w-full h-full object-cover rounded-[16px]"
+            className="w-full h-full object-cover"
             alt="Nil"
           />
         </div>

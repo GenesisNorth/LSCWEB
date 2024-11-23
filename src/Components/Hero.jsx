@@ -8,7 +8,7 @@ import WeeklyService from "./WeeklyService";
 
 const Hero = () => {
   return (
-    <div className="w-[1204px] space-y-[100px]">
+    <div className="w-full max-w-[1204px] mx-auto space-y-[100px] px-4 sm:px-6">
       <Member />
       <WeeklyService />
       <Story />
