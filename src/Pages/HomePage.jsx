@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import PhotoBank from "../Components/PhotoBank";
 import Welcome from "../Components/Welcome";
@@ -14,6 +15,9 @@ const HomePage = () => {
         <Hero/>
       </div>
       <PhotoBank/>
+      <div>
+      <Footer />
+      </div>
     </div>
   );
 };
