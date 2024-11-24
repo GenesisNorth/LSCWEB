@@ -1,3 +1,40 @@
+// import React from 'react'
+
+// import { BsQuote } from "react-icons/bs";
+// import { FiPlay } from "react-icons/fi";
+
+// const ChristToModal = () => {
+//   return (
+//     <div className="w-[1204px] space-y-[32px] h-[529px]">
+//       <h2 className="text-[40px] font-semibold text-center">
+//         A life without Christ is a life full of crises
+//       </h2>
+//       <div className="flex justify-between w-full h-full ">
+//         <div className="h-[277px] w-[545px] space-y-[8px]">
+//           <div className="w-[60px] h-[60px] bg-neutral-300 flex items-center justify-center rounded-[30px]">
+//             <BsQuote className="w-[40px] h-[40px]" />
+//           </div>
+//           <p className="text-left text-[20px] font-medium">
+//             For God so loved the world that he gave his only
+//             <br /> begotten son, that whosoever believeth in him shall
+//             <br /> live and not die
+//           </p>
+//           <h2 className="leading-[32px] text-[24px] font-medium">John 3:16</h2>
+//           <button className="px-[16px] py-[12px] rounded-[12px] text-[14px] font-medium outline outline-purple-500">
+//             I just gave my life to christ
+//           </button>
+//         </div>
+//         <div className="w-[633px] h-[437px] flex justify-center items-center">
+//           <div><FiPlay className="w-[40px] h-[40px]"/></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ChristToModal;
+
+
 import React from 'react'
 
 import { BsQuote } from "react-icons/bs";
@@ -5,31 +42,42 @@ import { FiPlay } from "react-icons/fi";
 
 const ChristToModal = () => {
   return (
-    <div className="w-[1204px] space-y-[32px] h-[529px]">
-      <h2 className="text-[40px] font-semibold text-center">
+    <div className="w-full max-w-[1204px] space-y-[32px] h-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl md:text-[40px] font-semibold text-center">
         A life without Christ is a life full of crises
       </h2>
-      <div className="flex justify-between w-full h-full ">
-        <div className="h-[277px] w-[545px] space-y-[8px]">
-          <div className="w-[60px] h-[60px] bg-neutral-300 flex items-center justify-center rounded-[30px]">
-            <BsQuote className="w-[40px] h-[40px]" />
+      <div className="flex flex-col md:flex-row justify-between w-full h-full space-y-8 md:space-y-0">
+        {/* Left Section */}
+        <div className="h-auto md:h-[277px] w-full md:w-[545px] space-y-[8px]">
+          <div className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] bg-neutral-300 flex items-center justify-center rounded-full">
+            <BsQuote className="w-[20px] h-[20px] sm:w-[35px] sm:h-[35px] md:w-[40px] md:h-[40px] flex items-center justify-center" />
           </div>
-          <p className="text-left text-[20px] font-medium">
+          <p className="text-left text-base sm:text-lg md:text-[20px] font-medium">
             For God so loved the world that he gave his only
             <br /> begotten son, that whosoever believeth in him shall
-            <br /> live and not die
+            <span className="hidden sm:inline">
+             <br /> live and not die
+            </span>
+            <span className="inline sm:hidden"> live and not die</span>
           </p>
-          <h2 className="leading-[32px] text-[24px] font-medium">John 3:16</h2>
-          <button className="px-[16px] py-[12px] rounded-[12px] text-[14px] font-medium outline outline-purple-500">
-            I just gave my life to christ
+          <h2 className="leading-[32px] text-lg sm:text-xl md:text-[24px] font-medium">
+            John 3:16
+          </h2>
+          <button className="px-[16px] py-[12px] rounded-[12px] text-sm sm:text-[14px] font-medium outline outline-purple-500">
+            I just gave my life to Christ
           </button>
         </div>
-        <div className="w-[633px] h-[437px] flex justify-center items-center">
-          <div><FiPlay className="w-[40px] h-[40px]"/></div>
+        {/* Right Section */}
+        <div className="w-full md:w-[633px] h-[200px] md:h-[437px] flex justify-center items-center">
+          <div>
+            <FiPlay className="w-[30px] h-[30px] md:w-[40px] md:h-[40px]" />
+          </div>
         </div>
       </div>
     </div>
   );
+  
+  
 };
 
 export default ChristToModal;

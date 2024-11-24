@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu, FiX, FiVideo } from "react-icons/fi";
 import ButtonOne from "../Button/ButtonOne";
+import Logo from "../assets/logo.png";
 
 const Navigation = () => {
   const activeClass = "text-[#222222]";
@@ -23,11 +24,14 @@ const Navigation = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+
   return (
     <div className="relative top-0 left-0 font-Inter w-full h-[127px] px-[24px] desktop:px-[120px] py-[39px] desktop:py-[24px] z-[100]">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <img src="path/to/logo.png" alt="Logo" />
+        <div className="flex justify-center items-center my-4">
+          <img src={Logo} alt="Logo" className="w-[190px] h-[109.15px] max-w-full object-contain" />
+       </div>
 
         {/* Desktop Navigation (Hidden on Mobile) */}
         <ul className="hidden desktop:flex font-medium text-[18px] items-center gap-[32px] h-[32px]">

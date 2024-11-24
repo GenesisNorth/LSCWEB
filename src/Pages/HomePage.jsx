@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from "../Components/Hero";
 import PhotoBank from "../Components/PhotoBank";
 import Welcome from "../Components/Welcome";
+import Footer from "../Components/Footer";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,9 @@ const HomePage = () => {
         <Hero/>
       </div>
       <PhotoBank/>
+      <Footer/>
     </div>
+    
   );
 };
 
