@@ -5,6 +5,10 @@ import HomePage from "./Pages/HomePage";
 import Giving from "./Pages/Giving";
 import WatchRead from "./Pages/WatchRead";
 
+
+
+// https://www.google.com/maps/embed?
+// https://maps.app.goo.gl/yFbtf3dTa7uS5hmj8
 const App = () => {
   const router = createBrowserRouter([
     {

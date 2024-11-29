@@ -163,7 +163,7 @@ const Navigation = () => {
               Giving
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/Watch_&_Read"
               onClick={toggleMobileMenu}
@@ -173,7 +173,7 @@ const Navigation = () => {
             >
               Watch & Read
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       )}
     </div>
