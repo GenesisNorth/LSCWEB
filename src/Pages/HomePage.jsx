@@ -3,6 +3,7 @@
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import PhotoBank from "../Components/PhotoBank";
+import UpcomingEvents from "../Components/UpcomingEvents";
 import Welcome from "../Components/Welcome";
 
 const HomePage = () => {
@@ -14,9 +15,14 @@ const HomePage = () => {
       <div className="flex justify-center my-[100px]">
         <Hero/>
       </div>
-      <PhotoBank/>
       <div>
-      <Footer />
+        <PhotoBank/>
+      </div> 
+      <div>
+        <UpcomingEvents/>
+      </div> 
+      <div>
+        <Footer />
       </div>
     </div>
   );
