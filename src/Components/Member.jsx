@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import image1 from "../assets/img.jpg";
-import image2 from "../assets/img2.png"; 
-import image3 from "../assets/img3.jpg"; 
+import image1 from "../assets/img5.jpeg";
+import image2 from "../assets/blaniyi.jpeg";
+import image3 from "../assets/img11.jpeg";
+import image4 from "../assets/img12.jpeg";
+
 import ExpandableItem from "./ExpandableMembership";
 import MembershipForm from "./MembershipForm";
 
@@ -26,7 +28,6 @@ const Member = () => {
     };
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Close the form with Escape key
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         setShowForm(false);
@@ -63,12 +64,11 @@ const Member = () => {
     },
   ];
 
-
   const handleExpand = (index) => {
-    setExpandedIndex(expandedIndex === index ? -1 : index); 
+    setExpandedIndex(expandedIndex === index ? -1 : index);
   };
 
-  const images = [image1, image2, image3]; 
+  const images = [image1, image2, image3, image4];
 
   const handleImageChange = (index) => {
     setCurrentImageIndex(index);
@@ -93,7 +93,6 @@ const Member = () => {
         </div>
       )}
 
-      {/* Main page content */}
       <div className={showForm ? "filter blur-sm opacity-50 transition-all" : ""}>
         <p className="text-[36px] font-semibold text-center">
           Be a part of God&apos;s move by:
@@ -105,20 +104,21 @@ const Member = () => {
                 <ExpandableItem
                   title={item.title}
                   description={item.description}
-                  isExpanded={expandedIndex === index} 
-                  onExpand={() => handleExpand(index)} 
+                  isExpanded={expandedIndex === index}
+                  onExpand={() => handleExpand(index)}
                   onImageClick={() => {
-                    handleImageChange(index); 
-                  }} 
-                  onClick={() => handleOpenForm(item.title)} 
+                    handleImageChange(index);
+                  }}
+                  onClick={() => handleOpenForm(item.title)}
                 />
-                
+
                 {expandedIndex === index && (
                   <div className="w-full sm:w-[320px] mx-auto mt-4 lg:hidden">
                     <img
-                      src={images[index]} 
+                      src={images[index]}
                       className="rounded-lg w-full h-auto object-cover"
                       alt="Item Display"
+                      loading="lazy"
                     />
                   </div>
                 )}
@@ -131,6 +131,7 @@ const Member = () => {
               src={images[currentImageIndex]}
               className="rounded-lg w-full h-full object-cover"
               alt="Main Display"
+              loading="lazy"
             />
           </div>
         </div>

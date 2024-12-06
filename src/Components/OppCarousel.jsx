@@ -5,7 +5,6 @@ import image2 from "../assets/levites.jpg";
 import image3 from "../assets/rally.jpg";
 import image4 from "../assets/firstlady.jpg";
 
-
 const items = [
   { id: 1, content: image, bgColor: "rounded-[50px]" },
   { id: 2, content: image2, bgColor: "rounded-[100px]" },
@@ -25,10 +24,11 @@ const OppCarousel = () => {
             key={index}
             className={`h-[270px] w-[280px] mb-[10px] shadow-md overflow-hidden ${item.bgColor}`}
           >
-            {/* Render Image */}
+            {/* Render Image with Lazy Loading */}
             <img
               src={item.content}
               alt={`Opp Carousel Item ${index + 1}`}
+              loading="lazy" // Lazy loading enabled
               className="w-full h-full object-cover"
             />
           </div>

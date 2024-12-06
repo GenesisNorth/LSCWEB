@@ -1,5 +1,8 @@
-import React from 'react';
-import image from "../assets/img.jpg";
+import React from 'react'
+import image6 from "../assets/img6.jpeg";
+import image7 from "../assets/img7.jpeg";
+import image8 from "../assets/img8.jpeg";
+import image9 from "../assets/img9.jpeg";
 
 const Story = () => {
   return (
@@ -12,9 +15,10 @@ const Story = () => {
         <div className="flex flex-col sm:flex-row w-full sm:w-[726px] min-h-[370px] rounded-[16px] bg-[#EEE7F6] p-[16px] space-y-4 sm:space-y-0 sm:space-x-4">
           <div className="w-[150px] h-[150px] sm:w-[199px] sm:h-[338px] rounded-full sm:rounded-[16px] overflow-hidden order-2 sm:order-1 mt-6 sm:mt-0">
             <img
-              src={image}
+              src={image6}
               className="w-full h-full object-cover"
               alt="Nil"
+              loading="lazy"
             />
           </div>
 
@@ -36,23 +40,26 @@ const Story = () => {
         {/* Extra Images Section (Hidden on Small Screens) */}
         <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
-            src={image}
+            src={image8}
             className="w-full h-full object-cover"
             alt="Nil"
+            loading="lazy"
           />
         </div>
         <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
-            src={image}
+            src={image9}
             className="w-full h-full object-cover"
             alt="Nil"
+            loading="lazy"
           />
         </div>
         <div className="hidden sm:block w-[150px] h-[150px] sm:w-[150px] sm:h-[370px] rounded-[16px] overflow-hidden">
           <img
-            src={image}
+            src={image7}
             className="w-full h-full object-cover"
             alt="Nil"
+            loading="lazy"
           />
         </div>
       </div>
