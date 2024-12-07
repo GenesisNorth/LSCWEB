@@ -2,8 +2,8 @@ import React from "react";
 
 import image from "../assets/yellow.jpg";
 import image2 from "../assets/levites.jpg";
-import image3 from "../assets/rally.jpg";
-import image4 from "../assets/firstlady.jpg";
+import image3 from "../assets/rally.webp";
+import image4 from "../assets/firstlady.webp";
 
 const items = [
   { id: 1, content: image, bgColor: "rounded-[50px]" },

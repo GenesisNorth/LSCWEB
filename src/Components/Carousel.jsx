@@ -1,7 +1,7 @@
 import React from "react";
 
-import image from "../assets/pdi.jpg";
-import image2 from "../assets/teeworship.jpeg";
+import image from "../assets/pdi.webp";
+import image2 from "../assets/teeworship.webp";
 import image3 from "../assets/pst.jpg";
 import image4 from "../assets/team.jpg";
 

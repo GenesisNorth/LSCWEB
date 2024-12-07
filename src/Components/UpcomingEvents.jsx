@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/img.jpg";
+import image1 from "../assets/pdi.webp";
 
 const UpcomingEvent = () => {
   return (
