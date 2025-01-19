@@ -1,5 +1,5 @@
-import React from "react";
-import WeeklyCard from "../Card/WeeklyCard";
+// import React from "react";
+import WeeklyCard from ".././Card/WeeklyCard";
 import image from "../assets/img1.jpeg";
 import image1 from "../assets/img2.jpeg";
 import image2 from "../assets/img3.jpeg";

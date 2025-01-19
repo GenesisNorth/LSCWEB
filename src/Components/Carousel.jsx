@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import image from "../assets/pdi.webp";
 import image2 from "../assets/teeworship.webp";

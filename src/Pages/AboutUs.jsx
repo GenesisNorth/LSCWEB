@@ -1,9 +1,41 @@
-import React from 'react'
+// import React from 'react'
 
-const AboutUs = () => {
+import AboutWelcome from "../Components/About/AboutWelcome"
+import Vision from "../Components/About/Vision";
+import Abitmore from "../Components/About/Abitmore"
+import OurPastors from '../Components/About/Ourpastors';
+import Juniorchurch from "../Components/About/Juniorchurch"
+import UpcomingEvents from '../Components/UpcomingEvents';
+import Footer from "../Components/Footer"
+
+
+
+ const AboutUs = () =>{
   return (
-    <div>AboutUs</div>
-  )
+    <div>
+      <div className="h-[745px] w-full sm:h-[755px] px-auto sm:px-[120px] flex items-end pb-[23px] justify-center bg-white rounded-b-[65px] overflow-hidden">
+        <AboutWelcome/>
+      </div>
+      <div className="flex justify-center my-[100px]">
+        <Vision/>
+      </div>
+      <div>
+      <Abitmore/>
+      </div>
+      <div>
+      <OurPastors/>
+      </div>
+      <div>
+        <Juniorchurch/>
+      </div>
+    <div className="">
+        <UpcomingEvents/>
+      </div>
+      <div>
+        <Footer/>
+      </div>
+    </div>
+  );
 }
 
-export default AboutUs
+export default AboutUs;

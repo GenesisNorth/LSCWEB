@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 import { BsQuote } from "react-icons/bs";
 import { FiPlay } from "react-icons/fi";
