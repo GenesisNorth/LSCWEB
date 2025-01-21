@@ -8,30 +8,39 @@ const Juniorchurch = () => {
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[40px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <img
-            src="/src/assets/pstadeboye.jpg"
-            alt="Pastor 1"
-            className="w-full h-[300px] object-cover rounded-[12px]"
-          />
-          <img
-            src="/src/assets/pstadeboye.jpg"
-            alt="Pastor 2"
-            className="w-full h-[300px] object-cover rounded-[12px]"
-          />
-          <img
-            src="/src/assets/pstadeboye.jpg"
-            alt="Pastor 3"
-            className="w-full h-[300px] object-cover rounded-[12px]"
-          />
-          <img
-            src="/src/assets/pstadeboye.jpg"
-            alt="Pastor 4"
-            className="w-full h-[300px] object-cover rounded-[12px]"
-          />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <div className="bg-[#EEE7F6] rounded-[12px] p-6">
+            <img
+              src="/src/assets/pstadeboye.jpg"
+              alt="Pastor 1"
+              className="w-full h-[300px] object-cover rounded-[12px]"
+            />
+          </div>
+          <div className="bg-[#EEE7F6] rounded-[12px] p-6">
+            <img
+              src="/src/assets/pstadeboye.jpg"
+              alt="Pastor 2"
+              className="w-full h-[300px] object-cover rounded-[12px]"
+            />
+          </div>
+          <div className="bg-[#EEE7F6] rounded-[12px] p-6">
+            <img
+              src="/src/assets/pstadeboye.jpg"
+              alt="Pastor 3"
+              className="w-full h-[300px] object-cover rounded-[12px]"
+            />
+          </div>
+          <div className="bg-[#EEE7F6] rounded-[12px] p-6">
+            <img
+              src="/src/assets/pstadeboye.jpg"
+              alt="Pastor 4"
+              className="w-full h-[300px] object-cover rounded-[12px]"
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col justify-start lg:justify-center items-center lg:items-start -mt-[240px] lg:-mt-[360px]">
+        <div className="flex flex-col justify-start lg:justify-center items-center lg:items-start mt-6 lg:mt-0">
           <p className="text-[18px] sm:text-[20px] lg:text-[22px] font-bold text-[#111111]">
             Our Junior Church
           </p>

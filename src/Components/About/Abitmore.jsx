@@ -3,12 +3,10 @@
 const Abitmore = () => {
   return (
     <div className="bg-white px-4 sm:px-6 lg:px-[120px] py-[24px]">
-      {/* Section Title */}
       <h2 className="text-center text-[24px] sm:text-[28px] lg:text-[32px] font-bold text-[#222222] mb-[32px]">
         Get to know a bit more about LSC
       </h2>
 
-      {/* Parent Section */}
       <div className="bg-[#EEE7F6] w-full rounded-[12px] flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-[32px] py-[24px] mb-[32px]">
         <div className="flex-1">
           <h3 className="font-semibold text-[20px] sm:text-[22px] lg:text-[24px] leading-[30px] sm:leading-[34px] lg:leading-[36px] text-[#111111] mb-[16px]">
@@ -32,7 +30,6 @@ const Abitmore = () => {
         </div>
       </div>
 
-      {/* Story and Confession Section */}
       <div className="flex flex-col lg:flex-row gap-[20px]">
         <div className="bg-[#EEE7F6] flex-1 p-[16px] sm:p-[20px] lg:p-[24px] rounded-[12px]">
           <h3 className="font-semibold text-[18px] sm:text-[20px] lg:text-[22px] leading-[28px] sm:leading-[30px] lg:leading-[32px] text-[#111111] mb-[16px]">
