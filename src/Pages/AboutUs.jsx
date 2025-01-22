@@ -1,41 +1,38 @@
-// import React from 'react'
-
-import AboutWelcome from "../Components/About/AboutWelcome"
+import AboutWelcome from "../Components/About/AboutWelcome";
 import Vision from "../Components/About/Vision";
-import Abitmore from "../Components/About/Abitmore"
-import OurPastors from '../Components/About/Ourpastors';
-import Juniorchurch from "../Components/About/Juniorchurch"
-import UpcomingEvents from '../Components/UpcomingEvents';
-import Footer from "../Components/Footer"
+import Abitmore from "../Components/About/Abitmore";
+import OurPastors from "../Components/About/OurPastors";
+import Juniorchurch from "../Components/About/Juniorchurch";
+import UpcomingEvents from "../Components/UpcomingEvents";
+import Footer from "../Components/Footer";
 
-
-
- const AboutUs = () =>{
+const AboutUs = () => {
   return (
     <div>
-      <div className="h-[745px] w-full sm:h-[755px] px-auto sm:px-[120px] flex items-end pb-[23px] justify-center bg-white rounded-b-[65px] overflow-hidden">
-        <AboutWelcome/>
+      {/* Adjusted Margin to Bring Content Down */}
+      <div className="h-auto w-full px-auto sm:px-[120px] flex items-start pt-[180px] pb-[23px] justify-center bg-white rounded-b-[65px] overflow-hidden">
+        <AboutWelcome />
       </div>
       <div className="flex justify-center my-[100px]">
-        <Vision/>
+        <Vision />
       </div>
       <div>
-      <Abitmore/>
+        <Abitmore />
       </div>
       <div>
-      <OurPastors/>
+        <OurPastors />
       </div>
       <div>
-        <Juniorchurch/>
+        <Juniorchurch />
       </div>
-    <div className="">
-        <UpcomingEvents/>
+      <div className="">
+        <UpcomingEvents />
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
-}
+};
 
 export default AboutUs;
