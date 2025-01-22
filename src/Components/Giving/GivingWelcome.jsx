@@ -7,7 +7,7 @@ const GivingWelcome = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/path-to-your-image.png')",
+            backgroundImage: "url('src/assets/pst.jpg')",
           }}
         >
 
