@@ -4,7 +4,6 @@ import ButtonOne from "../../Button/ButtonOne";
 const AboutWelcome = () => {
   return (
     <div className="flex px-[24px] flex-col sm:flex-row justify-between items-center w-full">
-      {/* Left Section */}
       <div className="h-full flex flex-col items-center sm:items-start">
         <div className="bg-white w-max desktop:w-[205px] h-auto rounded-lg px-5 py-2 flex items-center gap-2">
           <p className="font-Protest text-sm desktop:text-[16px] whitespace-nowrap text-black">
@@ -34,12 +33,11 @@ const AboutWelcome = () => {
         </ButtonOne>
       </div>
 
-      {/* Image Section */}
       <div className="flex justify-center items-center w-full sm:w-auto mt-8 sm:mt-0">
         <img
-          src="src/assets/pst.jpg" // Replace with your image path or URL
+          src="src/assets/pst.jpg"
           alt="About Us"
-          className="w-full max-w-[800px] h-auto rounded-lg object-cover" // Increased `max-w` for width
+          className="w-full max-w-[800px] h-auto rounded-lg object-cover"
         />
       </div>
     </div>
