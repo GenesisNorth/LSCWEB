@@ -1,28 +1,23 @@
-import React from "react";
-
-import Logo from "../assets/logo.png";
+// import React from "react";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 pr-9 pl-9">
-        {/* <div className="flex-none">
+        <div className="flex-none">
           <img
-            src="../assets/logo.png"
+            // src="image.png"
+            src="logo.png"
             alt="Logo"
             className="w-[115px] h-[109.15px] object-cover"
           />
-        </div> */}
-
-        <div className="flex justify-center items-center my-4">
-          <img src={Logo} alt="Logo" className="w-[190px] h-[109.15px] max-w-full object-cover" />
-       </div>
+        </div>
 
         <div className="flex flex-wrap gap-12">
           <div>
             <h3 className="font-medium text-base text-gray-900">Church</h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-600">
-              <li>Who we are?</li>
+              <li>Who we are</li>
               <li>Our Pastors</li>
               <li>Give</li>
             </ul>

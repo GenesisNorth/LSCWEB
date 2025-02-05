@@ -23,6 +23,7 @@ const App = () => {
           path: "About_Us",
           element: <AboutUs/>,
         },
+        
         {
           path: "Giving",
           element: <Giving/>,

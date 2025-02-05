@@ -1,25 +1,42 @@
-import React from 'react'
 
-import Hero from "../Components/Hero";
-import PhotoBank from "../Components/PhotoBank";
-import Welcome from "../Components/Welcome";
-import { div } from 'framer-motion/client';
+
+// export default AboutUs
+
+
+import AboutWelcome from "../Components/About/AboutWelcome";
+import Vision from "../Components/About/Vision";
+import Abitmore from "../Components/About/Abitmore";
+import OurPastors from "../Components/About/OurPastors";
+import Juniorchurch from "../Components/About/Juniorchurch";
+import UpcomingEvents from "../Components/UpcomingEvents";
+import Footer from "../Components/Footer";
+
 const AboutUs = () => {
-  // return (
-  //   <div>AboutUs</div>
-  // )
   return (
     <div>
-      <div className="h-[745px] w-full sm:h-[755px] px-auto sm:px-[120px] flex items-end pb-[23px] justify-center bg-[#F2EFEA] rounded-b-[65px] overflow-hidden">
-        <Welcome/>
+      <div className="h-auto w-full px-auto sm:px-[120px] flex items-start pt-[180px] pb-[23px] justify-center bg-white rounded-b-[65px] overflow-hidden">
+        <AboutWelcome />
       </div>
       <div className="flex justify-center my-[100px]">
-        <Hero/>
+        <Vision />
       </div>
-      <PhotoBank/>
+      <div>
+        <Abitmore />
+      </div>
+      <div>
+        <OurPastors />
+      </div>
+      <div>
+        <Juniorchurch />
+      </div>
+      <div className="">
+        <UpcomingEvents />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
 
-
-export default AboutUs
+export default AboutUs;

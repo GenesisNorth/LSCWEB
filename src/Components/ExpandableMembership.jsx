@@ -1,4 +1,5 @@
-import React from 'react';
+
+// import React from 'react';
 import PropTypes from 'prop-types';
 
 const ExpandableItem = ({ title, description, isExpanded, onExpand, onImageClick, onClick }) => {

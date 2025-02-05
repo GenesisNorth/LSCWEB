@@ -1,4 +1,6 @@
 import React from "react";
+
+// import React from "react";
 import image1 from "../assets/pdi.jpg";
 
 const UpcomingEvent = () => {

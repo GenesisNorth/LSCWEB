@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+
+
+import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import image1 from "../assets/clean.jpg";
 import image2 from "../assets/team.jpg";
 import image3 from "../assets/pst.jpg";
-import image4 from "../assets/rally.webp";
-import image5 from "../assets/teeworship.webp";
+import image4 from "../assets/rally.jpg";
+import image5 from "../assets/teeworship.jpg";
 import image6 from "../assets/guys.jpg";
-import image7 from "../assets/pfi.webp";
-import image8 from "../assets/firstlady.webp";
-import image9 from "../assets/pdi.webp";
-import image10 from "../assets/daraa.webp";
+import image7 from "../assets/pfi.jpg";
+import image8 from "../assets/firstlady.jpg";
+import image9 from "../assets/pdi.jpg";
+import image10 from "../assets/daraa.jpg";
 import image11 from "../assets/levites.jpg";
 import image12 from "../assets/cake.jpg";
-import image13 from "../assets/dancing.webp";
+import image13 from "../assets/dancing.jpg";
 import image14 from "../assets/yellow.jpg";
 import image15 from "../assets/food.jpg";
 
